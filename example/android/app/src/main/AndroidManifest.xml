@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.evilratt.flutter_zoom_sdk_example">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
    <application
         android:name="${applicationName}"
         android:label="flutter_zoom_sdk_example"
