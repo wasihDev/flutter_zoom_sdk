@@ -103,7 +103,7 @@ class _MeetingWidgetState extends State<MeetingWidget> {
                   );
                 },
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -130,9 +130,8 @@ class _MeetingWidgetState extends State<MeetingWidget> {
         meetingPasswordController.text.isNotEmpty) {
       ZoomOptions zoomOptions = ZoomOptions(
         domain: "zoom.us",
-        appKey: "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM
-        appSecret:
-            "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM
+        appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
+        appSecret: "bfnScM070sfa09za4cdpefuPHbD6NV10", //API SECRET FROM ZOOM
       );
       var meetingOptions = ZoomMeetingOptions(
           userId: 'username',
@@ -219,14 +218,19 @@ class _MeetingWidgetState extends State<MeetingWidget> {
 
     ZoomOptions zoomOptions = ZoomOptions(
       domain: "zoom.us",
-      appKey:
-          "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM -- SDK KEY
+      appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
       appSecret:
-          "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM -- SDK SECRET
+          "bfnScM070sfa09za4cdpefuPHbD6NV10", //API SECRET FROM ZOOM -- SDK SECRET
     );
     var meetingOptions = ZoomMeetingOptions(
         userId: 'evilrattdeveloper@gmail.com', //pass host email for zoom
         userPassword: 'Dlinkmoderm0641', //pass host password for zoom
+        // userId: 'evilrattdeveloper@gmail.com', //pass host email for zoom
+        // userPassword: 'Dlinkmoderm0641', //pass host password for zoom
+        // meetingId: meetingIdController.text,
+
+        // /// pass meeting id for join meeting only
+        // meetingPassword: meetingPasswordController.text,
         disableDialIn: "false",
         disableDrive: "false",
         disableInvite: "false",
@@ -315,10 +319,9 @@ class _MeetingWidgetState extends State<MeetingWidget> {
 
     ZoomOptions zoomOptions = ZoomOptions(
       domain: "zoom.us",
-      appKey:
-          "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM -- SDK KEY
-      appSecret:
-          "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM -- SDK SECRET
+      appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
+      appSecret: "bfnScM070sfa09za4cdpefuPHbD6NV10",
+      //API SECRET FROM ZOOM -- SDK SECRET
     );
     var meetingOptions = ZoomMeetingOptions(
         userId: 'evilrattdeveloper@gmail.com', //pass host email for zoom
