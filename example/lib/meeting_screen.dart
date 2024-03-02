@@ -130,8 +130,9 @@ class _MeetingWidgetState extends State<MeetingWidget> {
         meetingPasswordController.text.isNotEmpty) {
       ZoomOptions zoomOptions = ZoomOptions(
         domain: "zoom.us",
-        appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
-        appSecret: "bfnScM070sfa09za4cdpefuPHbD6NV10", //API SECRET FROM ZOOM
+        appKey: "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM
+        appSecret:
+            "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM
       );
       var meetingOptions = ZoomMeetingOptions(
           userId: 'username',
@@ -218,9 +219,8 @@ class _MeetingWidgetState extends State<MeetingWidget> {
 
     ZoomOptions zoomOptions = ZoomOptions(
       domain: "zoom.us",
-      appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
-      appSecret:
-          "bfnScM070sfa09za4cdpefuPHbD6NV10", //API SECRET FROM ZOOM -- SDK SECRET
+      appKey: "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM
+      appSecret: "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM
     );
     var meetingOptions = ZoomMeetingOptions(
         userId: 'evilrattdeveloper@gmail.com', //pass host email for zoom
@@ -319,8 +319,8 @@ class _MeetingWidgetState extends State<MeetingWidget> {
 
     ZoomOptions zoomOptions = ZoomOptions(
       domain: "zoom.us",
-      appKey: "zEHlu5LyT3KKGQgGtU5qDw", //API KEY FROM ZOOM
-      appSecret: "bfnScM070sfa09za4cdpefuPHbD6NV10",
+      appKey: "XKE4uWfeLwWEmh78YMbC6mqKcF8oM4YHTr9I", //API KEY FROM ZOOM
+      appSecret: "bT7N61pQzaLXU6VLj9TVl7eYuLbqAiB0KAdb", //API SECRET FROM ZOOM
       //API SECRET FROM ZOOM -- SDK SECRET
     );
     var meetingOptions = ZoomMeetingOptions(
@@ -335,7 +335,8 @@ class _MeetingWidgetState extends State<MeetingWidget> {
         viewOptions: "false",
         noAudio: "false",
         noDisconnectAudio: "false");
-
+// Passcode 516932
+// Meeting ID 841 6669 6931
     var zoom = ZoomView();
     zoom.initZoom(zoomOptions).then((results) {
       if (results[0] == 0) {
